@@ -1,0 +1,32 @@
+.Lightout{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 350px;
+    box-shadow: 0px 0px 5px 1px white;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 1px;
+    text-align: center;
+}
+
+.Key {
+    border: none;
+    cursor: pointer;
+}
+
+.Key.on{
+    background-color: rgb(0, 101, 126);
+}
+.Key.off{
+    background-color: rgb(14, 14, 26);
+}
+
+.isOver{
+    font-size: 30px;
+    text-align: center;
+    /* margin-top: 30px; */
+    margin: auto auto;
+}
