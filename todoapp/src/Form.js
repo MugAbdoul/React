@@ -13,7 +13,9 @@ class Form extends Component {
 
     handle = (evt) => {
         evt.preventDefault();
-        this.props.add(this.state.value);
+        if (this.state.value.length !== 0) {
+            this.props.add(this.state.value);
+        }
         this.setState({ value: "" });
     };
 
